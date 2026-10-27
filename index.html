@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Praktikum CSS Modern</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar menggunakan Flexbox -->
+    <header class="navbar">
+        <h2 class="logo">WebKita</h2>
+
+        <nav class="menu">
+            <a href="#beranda">Beranda</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#tentang">Tentang</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="beranda">
+        <div class="hero-content">
+            <h1>Selamat Datang di WebKita</h1>
+            <p>
+                Belajar teknologi, mengembangkan kreativitas,
+                dan membangun masa depan digital.
+            </p>
+            <a href="#layanan" class="btn">Jelajahi Layanan</a>
+        </div>
+    </section>
+
+    <!-- Card Section menggunakan CSS Grid -->
+    <section class="layanan" id="layanan">
+        <h2>Layanan Kami</h2>
+        <p class="subtitle">Temukan layanan terbaik untuk kebutuhanmu.</p>
+
+        <div class="card-container">
+
+            <div class="card">
+                <div class="icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Membangun website modern dengan HTML, CSS, dan JavaScript.</p>
+                <a href="#tentang">Pelajari Selengkapnya</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p>Menciptakan desain antarmuka yang menarik dan mudah digunakan.</p>
+                <a href="#tentang">Pelajari Selengkapnya</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">📱</div>
+                <h3>Mobile Design</h3>
+                <p>Membuat tampilan website yang nyaman digunakan di perangkat mobile.</p>
+                <a href="#tentang">Pelajari Selengkapnya</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">🚀</div>
+                <h3>Digital Innovation</h3>
+                <p>Mengembangkan ide kreatif menjadi solusi digital yang bermanfaat.</p>
+                <a href="#tentang">Pelajari Selengkapnya</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tentang -->
+    <section class="tentang" id="tentang">
+        <h2>Tentang Website</h2>
+        <p>
+            Website ini dibuat sebagai penerapan CSS modern,
+            Flexbox, CSS Grid, dan responsive web design.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 WebKita. Dibuat untuk praktikum CSS.</p>
+    </footer>
+
+</body>
+</html>

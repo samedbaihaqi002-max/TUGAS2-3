@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1e293b;
+    background-color: #f8fafc;
+}
+
+/* Navbar: menggunakan Flexbox */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+    color: #2563eb;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #334155;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #2563eb;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 380px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: clamp(30px, 5vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 30px;
+    color: #e0e7ff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: #2563eb;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Layanan */
+.layanan {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.layanan h2,
+.tentang h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #64748b;
+    margin-bottom: 35px;
+}
+
+/* CSS Grid dengan auto-fit */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 24px;
+    margin-top: 35px;
+}
+
+.card {
+    padding: 28px 22px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+}
+
+.icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #1e293b;
+}
+
+.card p {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Tentang */
+.tentang {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #eaf1ff;
+}
+
+.tentang p {
+    max-width: 650px;
+    margin: 15px auto 0;
+    color: #475569;
+}
+
+/* Footer */
+.footer {
+    padding: 24px 8%;
+    text-align: center;
+    background-color: #0f172a;
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+/* Responsive untuk tablet */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .menu {
+        gap: 16px;
+    }
+
+    .hero {
+        padding: 65px 5%;
+    }
+
+    .layanan {
+        padding: 55px 5%;
+    }
+
+    .card-container {
+        gap: 18px;
+    }
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 320px;
+        padding: 55px 20px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .layanan {
+        padding: 45px 20px;
+    }
+
+    .layanan h2,
+    .tentang h2 {
+        font-size: 27px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+    }
+
+    .card {
+        padding: 24px 20px;
+    }
+
+    .tentang {
+        padding: 45px 20px;
+    }
+}
